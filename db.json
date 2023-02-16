@@ -1,5 +1,38 @@
 {
-    "users": [],
-    "albums": [],
-    "photos": []
+  "users": [
+    {
+      "id": 1,
+      "name": "Myra"
+    },
+    {
+      "name": "Lindsey Rath",
+      "id": 2
+    },
+    {
+      "name": "Grace Kassulke",
+      "id": 3
+    },
+    {
+      "name": "Dr. Tami Kuhic",
+      "id": 4
+    },
+    {
+      "name": "Neal Hintz",
+      "id": 5
+    },
+    {
+      "name": "Travis Donnelly IV",
+      "id": 6
+    },
+    {
+      "name": "Sara Pouros",
+      "id": 7
+    },
+    {
+      "name": "Sara Will",
+      "id": 8
+    }
+  ],
+  "albums": [],
+  "photos": []
 }
