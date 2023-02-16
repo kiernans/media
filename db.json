@@ -1,36 +1,20 @@
 {
   "users": [
     {
-      "id": 1,
-      "name": "Myra"
+      "name": "Eleanor Witting",
+      "id": 1
     },
     {
-      "name": "Lindsey Rath",
+      "name": "Taylor Rohan",
       "id": 2
     },
     {
-      "name": "Grace Kassulke",
+      "name": "Ebony Zboncak",
       "id": 3
     },
     {
-      "name": "Dr. Tami Kuhic",
-      "id": 4
-    },
-    {
-      "name": "Neal Hintz",
+      "name": "Eddie Leannon PhD",
       "id": 5
-    },
-    {
-      "name": "Travis Donnelly IV",
-      "id": 6
-    },
-    {
-      "name": "Sara Pouros",
-      "id": 7
-    },
-    {
-      "name": "Sara Will",
-      "id": 8
     }
   ],
   "albums": [],

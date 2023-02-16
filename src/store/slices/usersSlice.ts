@@ -3,6 +3,7 @@ import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { AxiosError } from 'axios';
 import { fetchUsers } from '../thunks/fetchUsers';
 import { addUser } from '../thunks/addUser';
+import { deleteUser } from '../thunks/deleteUser';
 
 type UsersState = {
 	data: User[];
@@ -10,7 +11,7 @@ type UsersState = {
 	isLoading: boolean;
 };
 
-type User = {
+export type User = {
 	name: string;
 	id?: number;
 };
@@ -27,6 +28,7 @@ const usersSlice = createSlice({
 	initialState,
 	reducers: {},
 	extraReducers(builder) {
+		// Fetch Users
 		builder.addCase(fetchUsers.pending, (state, action) => {
 			state.isLoading = true;
 		});
@@ -43,6 +45,7 @@ const usersSlice = createSlice({
 			state.error = action.error;
 		});
 
+		// Add user
 		builder.addCase(addUser.pending, (state, action) => {
 			state.isLoading = true;
 		});
@@ -53,6 +56,21 @@ const usersSlice = createSlice({
 		builder.addCase(addUser.rejected, (state, action) => {
 			state.isLoading = false;
 			console.log(action.error);
+			state.error = action.error;
+		});
+
+		// Delete User
+		builder.addCase(deleteUser.pending, (state, action) => {
+			state.isLoading = true;
+		});
+		builder.addCase(deleteUser.fulfilled, (state, action) => {
+			state.isLoading = false;
+			state.data = state.data.filter((user) => {
+				return user.id !== action.payload.id;
+			});
+		});
+		builder.addCase(deleteUser.rejected, (state, action) => {
+			state.isLoading = false;
 			state.error = action.error;
 		});
 	},
