@@ -21,7 +21,11 @@ const UserListItem = ({ user }: UserListItemProps) => {
 
 	const header = (
 		<>
-			<Button loading={isLoading as boolean} onClick={handleClick}>
+			<Button
+				loading={isLoading as boolean}
+				onClick={handleClick}
+				className='mr-2'
+			>
 				<GoTrashcan />
 			</Button>
 			{error && <div>Error deleting user.</div>}
