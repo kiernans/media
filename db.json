@@ -9,14 +9,81 @@
       "id": 2
     },
     {
-      "name": "Ebony Zboncak",
+      "name": "Eddie Leannon PhD",
+      "id": 5
+    },
+    {
+      "name": "Ernestine Ruecker",
+      "id": 6
+    }
+  ],
+  "albums": [
+    {
+      "userId": 1,
+      "title": "Elegant Metal Bacon",
+      "id": 11
+    },
+    {
+      "userId": 1,
+      "title": "Tasty Cotton Computer",
+      "id": 12
+    },
+    {
+      "userId": 1,
+      "title": "Electronic Rubber Chicken",
+      "id": 13
+    },
+    {
+      "userId": 2,
+      "title": "Licensed Wooden Salad",
+      "id": 19
+    },
+    {
+      "userId": 6,
+      "title": "Rustic Bronze Towels",
+      "id": 25
+    },
+    {
+      "userId": 1,
+      "title": "Refined Frozen Soap",
+      "id": 26
+    },
+    {
+      "userId": 1,
+      "title": "Generic Fresh Chicken",
+      "id": 27
+    }
+  ],
+  "photos": [
+    {
+      "albumId": 11,
+      "url": "https://loremflickr.com/150/150/abstract?lock=61844",
+      "id": 1
+    },
+    {
+      "albumId": 25,
+      "url": "https://loremflickr.com/150/150/abstract?lock=89462",
       "id": 3
     },
     {
-      "name": "Eddie Leannon PhD",
+      "albumId": 25,
+      "url": "https://loremflickr.com/150/150/abstract?lock=11972",
+      "id": 4
+    },
+    {
+      "albumId": 11,
+      "url": "https://loremflickr.com/150/150/abstract?lock=5126",
       "id": 5
+    },
+    {
+      "albumId": 11,
+      "url": "https://loremflickr.com/150/150/abstract?lock=3978",
+      "id": 6
+    },
+    {
+      "albumId": 11,
+      "url": "https://loremflickr.com/150/150/abstract?lock=45573",
+      "id": 7
     }
-  ],
-  "albums": [],
-  "photos": []
+  ]
 }
